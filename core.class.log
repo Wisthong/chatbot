@@ -1,357 +1,12 @@
 [handleMsg]:  {
   key: {
-    remoteJid: '573182175736@s.whatsapp.net',
-    fromMe: false,
-    id: 'FC7C774FA24CD30F156CF4D3CA1E35E5',
-    participant: undefined
-  },
-  messageTimestamp: 1731950743,
-  pushName: '😂',
-  broadcast: false,
-  message: Message {
-    conversation: 'Boton',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2,
-      messageSecret: [Uint8Array]
-    }
-  },
-  body: 'Boton',
-  from: '573182175736'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_b06ddc7e-a4ee-451e-82d1-47622a2ae260',
-  keyword: 'key_920a7599-b544-4883-88aa-bf80edc8aa55',
-  answer: 'Aqui va un mensaje',
-  options: {
-    media: null,
-    buttons: [ [Object], [Object], [Object] ],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: '8474a9a5c2214c60db5f3b9cbd92994b'
-}
-[handleMsg]:  {
-  key: {
     remoteJid: '573135904749@s.whatsapp.net',
     fromMe: false,
-    id: '27D845D6491C636EE9B5E44C916106E0',
+    id: 'F5D71F2F7C8AD8FAC287B738F91E3E2F',
     participant: undefined
   },
-  messageTimestamp: 1731950804,
+  messageTimestamp: 1732053309,
   pushName: 'Juan Meneses',
-  broadcast: false,
-  message: Message {
-    conversation: 'Wisti',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2,
-      messageSecret: [Uint8Array]
-    }
-  },
-  body: 'Wisti',
-  from: '573135904749'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573135904749@s.whatsapp.net',
-    fromMe: false,
-    id: '469F90567099E6702373653FDFC37213',
-    participant: undefined
-  },
-  messageTimestamp: 1731950811,
-  pushName: 'Juan Meneses',
-  broadcast: false,
-  message: Message {
-    conversation: 'Mándame lo del banco pues',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2,
-      messageSecret: [Uint8Array]
-    }
-  },
-  body: 'Mándame lo del banco pues',
-  from: '573135904749'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573135904749@s.whatsapp.net',
-    fromMe: false,
-    id: '5B8EB9AC5AB5AF1E376F8AD00BC213BB',
-    participant: undefined
-  },
-  messageTimestamp: 1731950909,
-  pushName: 'Juan Meneses',
-  broadcast: false,
-  message: Message {
-    conversation: 'Epa',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2,
-      messageSecret: [Uint8Array]
-    }
-  },
-  body: 'Epa',
-  from: '573135904749'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573135904749@s.whatsapp.net',
-    fromMe: false,
-    id: '22E1CEEE16C0D508B2F8297428F797C6',
-    participant: undefined
-  },
-  messageTimestamp: 1731951246,
-  pushName: 'Juan Meneses',
-  broadcast: false,
-  message: Message {
-    conversation: 'Listo',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2,
-      messageSecret: [Uint8Array]
-    }
-  },
-  body: 'Listo',
-  from: '573135904749'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573006495552@s.whatsapp.net',
-    fromMe: false,
-    id: '3EB05B9B2AA434393F7202',
-    participant: undefined
-  },
-  messageTimestamp: 1731952165,
-  pushName: 'El Deseo De Onigumo…',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'HOLA',
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2,
-      messageSecret: [Uint8Array]
-    }
-  },
-  body: 'HOLA',
-  from: '573006495552'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_c0b1cf7c-8db9-44c6-9f8e-87d6c18e3eb3',
-  keyword: 'key_934d2625-2b92-4cf5-aeaf-6570c6dea90f',
-  answer: '🙌 Hola ¡Bienvenido al Chat Bot de la *Papelería Universal*! 🎉🖊️',
-  options: {
-    media: 'https://media.licdn.com/dms/image/v2/C561BAQFuDa7bnTijFg/company-background_10000/company-background_10000/0/1608825905089/distribuidora_universal_papeleria_cover?e=1732550400&v=beta&t=-PYBhIyKlbh_b8LFGzJAy59JYNZ4qMHcilw8nqDI_Mo',
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: 'c59e27deed9e748e474e448a3b14a9fb'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_f6ea09e0-10b4-42c1-a553-244299696413',
-  keyword: 'ans_c0b1cf7c-8db9-44c6-9f8e-87d6c18e3eb3',
-  answer: 'Estamos aquí para ayudarte con todo lo que necesites. Ya sea que busques útiles escolares, artículos de oficina, material para manualidades o cualquier otro producto, ¡lo tenemos! No dudes en preguntar por precios, disponibilidad o recomendaciones. ¡Estamos listos para hacer tu experiencia de compra rápida y sencilla!',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: 'c7e1683e7ee98c2db483ea3a8bfda7d5'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_0b980457-2f25-4075-ab51-92cec357d9be',
-  keyword: 'ans_f6ea09e0-10b4-42c1-a553-244299696413',
-  answer: 'Escribe *pedir* si te interesa algo',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [ [Object], [Object], [Object] ],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: 'ef7c8e6bc006349117a89e8cc7f3b1dd'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573160882708@s.whatsapp.net',
-    fromMe: false,
-    id: '1E68213D70D2B31DF3BDA5494B41F367',
-    participant: undefined
-  },
-  messageTimestamp: 1731953110,
-  pushName: 'NR🐷🌸🎀',
-  broadcast: false,
-  message: Message {
-    conversation: 'No me este escribiendo para dejarme en visto',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2,
-      messageSecret: [Uint8Array]
-    }
-  },
-  body: 'No me este escribiendo para dejarme en visto',
-  from: '573160882708'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573175203423@s.whatsapp.net',
-    fromMe: false,
-    id: 'A9D00A4EBAEF01F7D34ACFD5FED8231C',
-    participant: undefined
-  },
-  messageTimestamp: 1731954699,
-  pushName: 'José Manuel',
-  broadcast: false,
-  message: Message {
-    extendedTextMessage: ExtendedTextMessage {
-      text: 'Esos estarían listos para el miércoles o jueves',
-      previewType: 0,
-      contextInfo: [ContextInfo],
-      inviteLinkGroupTypeV2: 0
-    },
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2,
-      messageSecret: [Uint8Array]
-    }
-  },
-  body: 'Esos estarían listos para el miércoles o jueves',
-  from: '573175203423'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_c0b1cf7c-8db9-44c6-9f8e-87d6c18e3eb3',
-  keyword: 'key_934d2625-2b92-4cf5-aeaf-6570c6dea90f',
-  answer: '🙌 Hola ¡Bienvenido al Chat Bot de la *Papelería Universal*! 🎉🖊️',
-  options: {
-    media: 'https://media.licdn.com/dms/image/v2/C561BAQFuDa7bnTijFg/company-background_10000/company-background_10000/0/1608825905089/distribuidora_universal_papeleria_cover?e=1732550400&v=beta&t=-PYBhIyKlbh_b8LFGzJAy59JYNZ4qMHcilw8nqDI_Mo',
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: 'c59e27deed9e748e474e448a3b14a9fb'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_f6ea09e0-10b4-42c1-a553-244299696413',
-  keyword: 'ans_c0b1cf7c-8db9-44c6-9f8e-87d6c18e3eb3',
-  answer: 'Estamos aquí para ayudarte con todo lo que necesites. Ya sea que busques útiles escolares, artículos de oficina, material para manualidades o cualquier otro producto, ¡lo tenemos! No dudes en preguntar por precios, disponibilidad o recomendaciones. ¡Estamos listos para hacer tu experiencia de compra rápida y sencilla!',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: 'c7e1683e7ee98c2db483ea3a8bfda7d5'
-}
-[QUEUE_SE_ENVIO]:  {
-  ref: 'ans_0b980457-2f25-4075-ab51-92cec357d9be',
-  keyword: 'ans_f6ea09e0-10b4-42c1-a553-244299696413',
-  answer: 'Escribe *pedir* si te interesa algo',
-  options: {
-    media: null,
-    buttons: [],
-    capture: false,
-    child: null,
-    delay: 0,
-    idle: null,
-    ref: null,
-    nested: [ [Object], [Object], [Object] ],
-    keyword: {},
-    callback: false
-  },
-  refSerialize: 'ef7c8e6bc006349117a89e8cc7f3b1dd'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573175203423@s.whatsapp.net',
-    fromMe: false,
-    id: '8F881A2DF7223A8352A981B53A7B7F30',
-    participant: undefined
-  },
-  messageTimestamp: 1731954738,
-  pushName: 'José Manuel',
-  broadcast: false,
-  message: Message {
-    conversation: 'Ya esta',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2,
-      messageSecret: [Uint8Array]
-    }
-  },
-  body: 'Ya esta',
-  from: '573175203423'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573175203423@s.whatsapp.net',
-    fromMe: false,
-    id: '667F93C7184C4E3F073A0B894B120536',
-    participant: undefined
-  },
-  messageTimestamp: 1731955941,
-  pushName: 'José Manuel',
-  broadcast: false,
-  message: Message {
-    conversation: 'Ah si perame ya hablo con papelacho',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2,
-      messageSecret: [Uint8Array]
-    }
-  },
-  body: 'Ah si perame ya hablo con papelacho',
-  from: '573175203423'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573182175736@s.whatsapp.net',
-    fromMe: false,
-    id: 'DAF2064E9427317872A7A41FEEE2506C',
-    participant: undefined
-  },
-  messageTimestamp: 1731958280,
-  pushName: '😂',
   broadcast: false,
   message: Message {
     conversation: 'Hola',
@@ -362,11 +17,11 @@
     }
   },
   body: 'Hola',
-  from: '573182175736'
+  from: '573135904749'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_c0b1cf7c-8db9-44c6-9f8e-87d6c18e3eb3',
-  keyword: 'key_934d2625-2b92-4cf5-aeaf-6570c6dea90f',
+  ref: 'ans_88fdaf9c-dc0f-4d2f-8c59-3f18beb777da',
+  keyword: 'key_320c7f7e-fb74-4275-80f8-e3e2aa450fe3',
   answer: '🙌 Hola ¡Bienvenido al Chat Bot de la *Papelería Universal*! 🎉🖊️',
   options: {
     media: 'https://media.licdn.com/dms/image/v2/C561BAQFuDa7bnTijFg/company-background_10000/company-background_10000/0/1608825905089/distribuidora_universal_papeleria_cover?e=1732550400&v=beta&t=-PYBhIyKlbh_b8LFGzJAy59JYNZ4qMHcilw8nqDI_Mo',
@@ -380,11 +35,11 @@
     keyword: {},
     callback: false
   },
-  refSerialize: 'c59e27deed9e748e474e448a3b14a9fb'
+  refSerialize: '2db5ea1ed1fbb0d3fd45f9e54a20cfea'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_f6ea09e0-10b4-42c1-a553-244299696413',
-  keyword: 'ans_c0b1cf7c-8db9-44c6-9f8e-87d6c18e3eb3',
+  ref: 'ans_d42b3698-6fa2-4765-9980-a663e7e12925',
+  keyword: 'ans_88fdaf9c-dc0f-4d2f-8c59-3f18beb777da',
   answer: 'Estamos aquí para ayudarte con todo lo que necesites. Ya sea que busques útiles escolares, artículos de oficina, material para manualidades o cualquier otro producto, ¡lo tenemos! No dudes en preguntar por precios, disponibilidad o recomendaciones. ¡Estamos listos para hacer tu experiencia de compra rápida y sencilla!',
   options: {
     media: null,
@@ -398,12 +53,12 @@
     keyword: {},
     callback: false
   },
-  refSerialize: 'c7e1683e7ee98c2db483ea3a8bfda7d5'
+  refSerialize: 'a865d8b78f1aa6860d7f5cec93e2a3f5'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_0b980457-2f25-4075-ab51-92cec357d9be',
-  keyword: 'ans_f6ea09e0-10b4-42c1-a553-244299696413',
-  answer: 'Escribe *pedir* si te interesa algo',
+  ref: 'ans_429464a1-5251-400e-8307-18043e433a46',
+  keyword: 'ans_d42b3698-6fa2-4765-9980-a663e7e12925',
+  answer: '__call_action__',
   options: {
     media: null,
     buttons: [],
@@ -412,42 +67,94 @@
     delay: 0,
     idle: null,
     ref: null,
-    nested: [ [Object], [Object], [Object] ],
+    nested: [],
     keyword: {},
-    callback: false
+    callback: true
   },
-  refSerialize: 'ef7c8e6bc006349117a89e8cc7f3b1dd'
+  refSerialize: '3a1de07822c9e9246f9a47ccd776c72c'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_4d959256-8e62-41a8-a5a8-b8980437a3f3',
+  keyword: 'ans_429464a1-5251-400e-8307-18043e433a46',
+  answer: '__capture_only_intended__',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '36a9ec23f64eebd70110da6fbc4acb81'
 }
 [handleMsg]:  {
   key: {
-    remoteJid: '573182175736@s.whatsapp.net',
+    remoteJid: '573135904749@s.whatsapp.net',
     fromMe: false,
-    id: 'AC87A7307402ECAE97F464C32688DDFE',
+    id: '9A346A83C50CD54CA397AD264EDF9009',
     participant: undefined
   },
-  messageTimestamp: 1731958287,
-  pushName: '😂',
+  messageTimestamp: 1732053314,
+  pushName: 'Juan Meneses',
   broadcast: false,
   message: Message {
-    conversation: 'Pedir',
+    conversation: 'Juan',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2,
       messageSecret: [Uint8Array]
     }
   },
-  body: 'Pedir',
-  from: '573182175736'
+  body: 'Juan',
+  from: '573135904749'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_39a6b9fa-badb-4bd4-807c-901a7029a402',
-  keyword: 'key_e9978e4c-87c9-4258-aa82-29b8cfc8fa2e',
-  answer: '1. *Arte*\n' +
-    '2. *Aseo*\n' +
-    '3. *Cacharro*\n' +
-    '4. *Cosméticos*\n' +
-    '5. *Papelería*\n' +
-    '6. *Tecnología*',
+  ref: 'ans_c82743e9-0058-424c-8e99-16e8e16f553e',
+  keyword: 'ans_4d959256-8e62-41a8-a5a8-b8980437a3f3',
+  answer: 'Escribe *conocer*, *linea*, para que puedas ver nuestras lineas de venta',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [ [Object], [Object], [Object], [Object], [Object] ],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '1730df76e7e95b59a16b7b959ef98bd5'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573135904749@s.whatsapp.net',
+    fromMe: false,
+    id: '8D6C9EAF3CFC3FD056736EB4472D5B27',
+    participant: undefined
+  },
+  messageTimestamp: 1732053321,
+  pushName: 'Juan Meneses',
+  broadcast: false,
+  message: Message {
+    conversation: 'Conocer',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'Conocer',
+  from: '573135904749'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_a34197fe-5728-4043-b1fa-ce3d4ee86aaf',
+  keyword: 'key_63dd58c6-f81d-4c41-80bf-aaeaeba531dd',
+  answer: '1. *Papelería*\n2. *Cosméticos*\n3. *Aseo*\n4. *Medicamentos*',
   options: {
     media: null,
     buttons: [],
@@ -460,11 +167,11 @@
     keyword: {},
     callback: false
   },
-  refSerialize: 'b4584af9e4492315be5165082fef04c7'
+  refSerialize: 'd8bc3e6081960a07e7b9c5fc345e1c98'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_9f966f2b-86da-48e5-9217-5f85c399a469',
-  keyword: 'ans_39a6b9fa-badb-4bd4-807c-901a7029a402',
+  ref: 'ans_08e2256b-2f54-4947-9a54-4bfefae4870b',
+  keyword: 'ans_a34197fe-5728-4043-b1fa-ce3d4ee86aaf',
   answer: 'Selecciona tu opción de preferencia',
   options: {
     media: null,
@@ -474,7 +181,27 @@
     delay: 0,
     idle: null,
     ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '42175dcfb1d7dad7d2638ec9ba7acbf1'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_9dea6e26-4df4-47cb-9d4f-524c909411b0',
+  keyword: 'ans_08e2256b-2f54-4947-9a54-4bfefae4870b',
+  answer: 'Selecciona tu opción de preferencia\n' +
+    'Debes de responder antes de que transcurran 2 minutos',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: 120000,
+    ref: null,
     nested: [
+      [Object], [Object], [Object],
       [Object], [Object], [Object],
       [Object], [Object], [Object],
       [Object], [Object], [Object],
@@ -483,44 +210,754 @@
       [Object], [Object], [Object]
     ],
     keyword: {},
+    callback: true
+  },
+  refSerialize: '48b5b03ef0a59311a1160fb85496f9a9'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573135904749@s.whatsapp.net',
+    fromMe: false,
+    id: 'BF2C5CCCBE06A2246CDCD58A1DC3BAD3',
+    participant: undefined
+  },
+  messageTimestamp: 1732053330,
+  pushName: 'Juan Meneses',
+  broadcast: false,
+  message: Message {
+    conversation: '1',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: '1',
+  from: '573135904749'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_90f052e0-ae94-4f8d-9c40-6ab4fa5073ee',
+  keyword: 'key_bb669685-4985-4f02-9c7d-b87b2c338c74',
+  answer: 'Has ingresado al catálogo de *Papelería*\n' +
+    'En el link de abajo (⬇⬇⬇) puedes observar nuestro *catálogo*',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
     callback: false
   },
-  refSerialize: '3c62b2a5a67faef99e79247b2a7db814'
+  refSerialize: '137fdb3caee086f7edd3854c3bea5f2b'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_2ee023b5-fe26-4d25-90a5-d3be61ed47ca',
+  keyword: 'ans_90f052e0-ae94-4f8d-9c40-6ab4fa5073ee',
+  answer: 'https://drive.google.com/file/d/1oTldNGPb_Qc8uw7SbVPG8m2as1h30H0V/view?usp=sharing',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'c1a0c312dc9f9589235e412f2f8ff1a2'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_9be6057d-ca04-4248-ad5f-e51969236366',
+  keyword: 'ans_2ee023b5-fe26-4d25-90a5-d3be61ed47ca',
+  answer: 'Escribe *asesor* para ser atendido por uno de nuestros asesores',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [ [Object], [Object], [Object], [Object] ],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'a9ca24c6668dd063af6e216617fdd2ba'
 }
 [handleMsg]:  {
   key: {
-    remoteJid: '573136856619@s.whatsapp.net',
+    remoteJid: '573135904749@s.whatsapp.net',
     fromMe: false,
-    id: 'F406E920B0DC9BA8A26E79C4AD37304C',
+    id: '6EFB95468B5D01384CB956A75D5A97F7',
     participant: undefined
   },
-  messageTimestamp: 1731960209,
-  pushName: "🎀'Kariinaa Ibaarraa'🎀🧸",
+  messageTimestamp: 1732053337,
+  pushName: 'Juan Meneses',
   broadcast: false,
   message: Message {
-    conversation: 'Para?',
+    conversation: 'Asesor',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2,
       messageSecret: [Uint8Array]
     }
   },
-  body: 'Para?',
-  from: '573136856619'
+  body: 'Asesor',
+  from: '573135904749'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_7d48a610-964a-4cd5-b618-eb2f762f7bab',
+  keyword: 'key_7d6dc493-106f-40bf-a3dd-31940bb13ce7',
+  answer: 'En un momento seras atentido por uno de nuestros asesores',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'a025aaefacac205408ac59d783d28a7a'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_b360a6d7-265f-486d-8538-a19025eeaf29',
+  keyword: 'ans_7d48a610-964a-4cd5-b618-eb2f762f7bab',
+  answer: '⬇⬇⬇ Por favor, presiona el link de abajo y serás atendido por uno de nuestros asesores ⬇⬇⬇',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 2000,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'ffd91780a0084887af3c39e775460713'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_093cdd0a-3d01-4914-a387-f0ea4699a769',
+  keyword: 'ans_b360a6d7-265f-486d-8538-a19025eeaf29',
+  answer: 'https://wa.me/573165365663?text=Hola%20estoy%20interesado,%20en%20adquirir%20.....%20',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 2000,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '72eb9dabad02ff95b7da7391bf4a47ef'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573006495552@s.whatsapp.net',
+    fromMe: false,
+    id: '3AB15973302BB4DDD3F1',
+    participant: undefined
+  },
+  messageTimestamp: 1732053377,
+  pushName: 'El Deseo De Onigumo…',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage { text: 'Hola', contextInfo: [ContextInfo] },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'Hola',
+  from: '573006495552'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573006495552@s.whatsapp.net',
+    fromMe: false,
+    id: '3AD8EB0DACAA55F77D13',
+    participant: undefined
+  },
+  messageTimestamp: 1732053393,
+  pushName: 'El Deseo De Onigumo…',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage { text: 'Hola', contextInfo: [ContextInfo] },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'Hola',
+  from: '573006495552'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_88fdaf9c-dc0f-4d2f-8c59-3f18beb777da',
+  keyword: 'key_320c7f7e-fb74-4275-80f8-e3e2aa450fe3',
+  answer: '🙌 Hola ¡Bienvenido al Chat Bot de la *Papelería Universal*! 🎉🖊️',
+  options: {
+    media: 'https://media.licdn.com/dms/image/v2/C561BAQFuDa7bnTijFg/company-background_10000/company-background_10000/0/1608825905089/distribuidora_universal_papeleria_cover?e=1732550400&v=beta&t=-PYBhIyKlbh_b8LFGzJAy59JYNZ4qMHcilw8nqDI_Mo',
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '2db5ea1ed1fbb0d3fd45f9e54a20cfea'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_d42b3698-6fa2-4765-9980-a663e7e12925',
+  keyword: 'ans_88fdaf9c-dc0f-4d2f-8c59-3f18beb777da',
+  answer: 'Estamos aquí para ayudarte con todo lo que necesites. Ya sea que busques útiles escolares, artículos de oficina, material para manualidades o cualquier otro producto, ¡lo tenemos! No dudes en preguntar por precios, disponibilidad o recomendaciones. ¡Estamos listos para hacer tu experiencia de compra rápida y sencilla!',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'a865d8b78f1aa6860d7f5cec93e2a3f5'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_429464a1-5251-400e-8307-18043e433a46',
+  keyword: 'ans_d42b3698-6fa2-4765-9980-a663e7e12925',
+  answer: '__call_action__',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '3a1de07822c9e9246f9a47ccd776c72c'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_4d959256-8e62-41a8-a5a8-b8980437a3f3',
+  keyword: 'ans_429464a1-5251-400e-8307-18043e433a46',
+  answer: '__capture_only_intended__',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '36a9ec23f64eebd70110da6fbc4acb81'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573006495552@s.whatsapp.net',
+    fromMe: false,
+    id: '3AE28B5F8F5DC900F869',
+    participant: undefined
+  },
+  messageTimestamp: 1732053417,
+  pushName: 'El Deseo De Onigumo…',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'Cristiano Ronaldo',
+      contextInfo: [ContextInfo]
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'Cristiano Ronaldo',
+  from: '573006495552'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_c82743e9-0058-424c-8e99-16e8e16f553e',
+  keyword: 'ans_4d959256-8e62-41a8-a5a8-b8980437a3f3',
+  answer: 'Escribe *conocer*, *linea*, para que puedas ver nuestras lineas de venta',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [ [Object], [Object], [Object], [Object], [Object] ],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '1730df76e7e95b59a16b7b959ef98bd5'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573006495552@s.whatsapp.net',
+    fromMe: false,
+    id: '3ADC447D38A784BB7199',
+    participant: undefined
+  },
+  messageTimestamp: 1732053432,
+  pushName: 'El Deseo De Onigumo…',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage { text: 'Conocer', contextInfo: [ContextInfo] },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'Conocer',
+  from: '573006495552'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_a34197fe-5728-4043-b1fa-ce3d4ee86aaf',
+  keyword: 'key_63dd58c6-f81d-4c41-80bf-aaeaeba531dd',
+  answer: '1. *Papelería*\n2. *Cosméticos*\n3. *Aseo*\n4. *Medicamentos*',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'd8bc3e6081960a07e7b9c5fc345e1c98'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_08e2256b-2f54-4947-9a54-4bfefae4870b',
+  keyword: 'ans_a34197fe-5728-4043-b1fa-ce3d4ee86aaf',
+  answer: 'Selecciona tu opción de preferencia',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '42175dcfb1d7dad7d2638ec9ba7acbf1'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_9dea6e26-4df4-47cb-9d4f-524c909411b0',
+  keyword: 'ans_08e2256b-2f54-4947-9a54-4bfefae4870b',
+  answer: 'Selecciona tu opción de preferencia\n' +
+    'Debes de responder antes de que transcurran 2 minutos',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: 120000,
+    ref: null,
+    nested: [
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object]
+    ],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '48b5b03ef0a59311a1160fb85496f9a9'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573006495552@s.whatsapp.net',
+    fromMe: false,
+    id: '3A0D2858F4830EA2F6E7',
+    participant: undefined
+  },
+  messageTimestamp: 1732053439,
+  pushName: 'El Deseo De Onigumo…',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage { text: '2', contextInfo: [ContextInfo] },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: '2',
+  from: '573006495552'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_50b0d8e6-9182-4707-a3c4-5195749535ec',
+  keyword: 'key_3c8a8c49-0383-4ab2-b1cb-f851c47288d8',
+  answer: 'Has ingresado al catálogo de *Cosméticos*\n' +
+    'En el link de abajo (⬇⬇⬇) puedes observar nuestro *catálogo*',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'b3932f14dbed14d6d9ab42e0a8972754'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_6c2bcd8f-b8d2-4997-9867-4ea460cd4efd',
+  keyword: 'ans_50b0d8e6-9182-4707-a3c4-5195749535ec',
+  answer: 'https://drive.google.com/file/d/1Ofa63QJ1yb2reZMq1Dzt18Thh5I-vBPh/view?usp=sharing',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '42ee44a7b2af98231945b3b60fcce6e6'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_e94f2eb5-7417-4159-9171-5f4920552ec9',
+  keyword: 'ans_6c2bcd8f-b8d2-4997-9867-4ea460cd4efd',
+  answer: 'Escribe *asesor* para ser atendido por uno de nuestros asesores',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [ [Object], [Object], [Object], [Object] ],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '4858eba87c7ead7d1a3339e86e6a7c82'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573006495552@s.whatsapp.net',
+    fromMe: false,
+    id: '3A3035BFF5E1E0B70604',
+    participant: undefined
+  },
+  messageTimestamp: 1732053449,
+  pushName: 'El Deseo De Onigumo…',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage { text: 'Asesor', contextInfo: [ContextInfo] },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'Asesor',
+  from: '573006495552'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_7d48a610-964a-4cd5-b618-eb2f762f7bab',
+  keyword: 'key_7d6dc493-106f-40bf-a3dd-31940bb13ce7',
+  answer: 'En un momento seras atentido por uno de nuestros asesores',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'a025aaefacac205408ac59d783d28a7a'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_b360a6d7-265f-486d-8538-a19025eeaf29',
+  keyword: 'ans_7d48a610-964a-4cd5-b618-eb2f762f7bab',
+  answer: '⬇⬇⬇ Por favor, presiona el link de abajo y serás atendido por uno de nuestros asesores ⬇⬇⬇',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 2000,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'ffd91780a0084887af3c39e775460713'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_093cdd0a-3d01-4914-a387-f0ea4699a769',
+  keyword: 'ans_b360a6d7-265f-486d-8538-a19025eeaf29',
+  answer: 'https://wa.me/573165365663?text=Hola%20estoy%20interesado,%20en%20adquirir%20.....%20',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 2000,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '72eb9dabad02ff95b7da7391bf4a47ef'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573006495552@s.whatsapp.net',
+    fromMe: false,
+    id: '3A4185765E0D2E8FCA3C',
+    participant: undefined
+  },
+  messageTimestamp: 1732053463,
+  pushName: 'El Deseo De Onigumo…',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'Hola estoy interesado, en adquirir .....',
+      contextInfo: [ContextInfo]
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'Hola estoy interesado, en adquirir .....',
+  from: '573006495552'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_88fdaf9c-dc0f-4d2f-8c59-3f18beb777da',
+  keyword: 'key_320c7f7e-fb74-4275-80f8-e3e2aa450fe3',
+  answer: '🙌 Hola ¡Bienvenido al Chat Bot de la *Papelería Universal*! 🎉🖊️',
+  options: {
+    media: 'https://media.licdn.com/dms/image/v2/C561BAQFuDa7bnTijFg/company-background_10000/company-background_10000/0/1608825905089/distribuidora_universal_papeleria_cover?e=1732550400&v=beta&t=-PYBhIyKlbh_b8LFGzJAy59JYNZ4qMHcilw8nqDI_Mo',
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '2db5ea1ed1fbb0d3fd45f9e54a20cfea'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_d42b3698-6fa2-4765-9980-a663e7e12925',
+  keyword: 'ans_88fdaf9c-dc0f-4d2f-8c59-3f18beb777da',
+  answer: 'Estamos aquí para ayudarte con todo lo que necesites. Ya sea que busques útiles escolares, artículos de oficina, material para manualidades o cualquier otro producto, ¡lo tenemos! No dudes en preguntar por precios, disponibilidad o recomendaciones. ¡Estamos listos para hacer tu experiencia de compra rápida y sencilla!',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'a865d8b78f1aa6860d7f5cec93e2a3f5'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_429464a1-5251-400e-8307-18043e433a46',
+  keyword: 'ans_d42b3698-6fa2-4765-9980-a663e7e12925',
+  answer: '__call_action__',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '3a1de07822c9e9246f9a47ccd776c72c'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_4d959256-8e62-41a8-a5a8-b8980437a3f3',
+  keyword: 'ans_429464a1-5251-400e-8307-18043e433a46',
+  answer: '__capture_only_intended__',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '36a9ec23f64eebd70110da6fbc4acb81'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573128717462@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB06924556AEF4E20503F',
+    participant: undefined
+  },
+  messageTimestamp: 1732053756,
+  pushName: 'ALBA R  VALENCIA H',
+  broadcast: false,
+  message: Message {
+    conversation: 'hola',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'hola',
+  from: '573128717462'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_88fdaf9c-dc0f-4d2f-8c59-3f18beb777da',
+  keyword: 'key_320c7f7e-fb74-4275-80f8-e3e2aa450fe3',
+  answer: '🙌 Hola ¡Bienvenido al Chat Bot de la *Papelería Universal*! 🎉🖊️',
+  options: {
+    media: 'https://media.licdn.com/dms/image/v2/C561BAQFuDa7bnTijFg/company-background_10000/company-background_10000/0/1608825905089/distribuidora_universal_papeleria_cover?e=1732550400&v=beta&t=-PYBhIyKlbh_b8LFGzJAy59JYNZ4qMHcilw8nqDI_Mo',
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '2db5ea1ed1fbb0d3fd45f9e54a20cfea'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_d42b3698-6fa2-4765-9980-a663e7e12925',
+  keyword: 'ans_88fdaf9c-dc0f-4d2f-8c59-3f18beb777da',
+  answer: 'Estamos aquí para ayudarte con todo lo que necesites. Ya sea que busques útiles escolares, artículos de oficina, material para manualidades o cualquier otro producto, ¡lo tenemos! No dudes en preguntar por precios, disponibilidad o recomendaciones. ¡Estamos listos para hacer tu experiencia de compra rápida y sencilla!',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'a865d8b78f1aa6860d7f5cec93e2a3f5'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_429464a1-5251-400e-8307-18043e433a46',
+  keyword: 'ans_d42b3698-6fa2-4765-9980-a663e7e12925',
+  answer: '__call_action__',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '3a1de07822c9e9246f9a47ccd776c72c'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_4d959256-8e62-41a8-a5a8-b8980437a3f3',
+  keyword: 'ans_429464a1-5251-400e-8307-18043e433a46',
+  answer: '__capture_only_intended__',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '36a9ec23f64eebd70110da6fbc4acb81'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '573136504535@s.whatsapp.net',
     fromMe: false,
-    id: 'A4C471BA872E3A6B6A6061ACC51CECD8',
+    id: '0B92AB16D5C6CF5FAB5F03DEC830683E',
     participant: undefined
   },
-  messageTimestamp: 1731960251,
+  messageTimestamp: 1732053761,
   pushName: 'Mi Chocuanina, Mi Vida ❤️🕊️',
   broadcast: false,
   message: Message {
     extendedTextMessage: ExtendedTextMessage {
-      text: 'Ay amor me imagino',
+      text: 'Hola',
       previewType: 0,
       contextInfo: [ContextInfo],
       inviteLinkGroupTypeV2: 0
@@ -531,22 +968,217 @@
       messageSecret: [Uint8Array]
     }
   },
-  body: 'Ay amor me imagino',
+  body: 'Hola',
   from: '573136504535'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_88fdaf9c-dc0f-4d2f-8c59-3f18beb777da',
+  keyword: 'key_320c7f7e-fb74-4275-80f8-e3e2aa450fe3',
+  answer: '🙌 Hola ¡Bienvenido al Chat Bot de la *Papelería Universal*! 🎉🖊️',
+  options: {
+    media: 'https://media.licdn.com/dms/image/v2/C561BAQFuDa7bnTijFg/company-background_10000/company-background_10000/0/1608825905089/distribuidora_universal_papeleria_cover?e=1732550400&v=beta&t=-PYBhIyKlbh_b8LFGzJAy59JYNZ4qMHcilw8nqDI_Mo',
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '2db5ea1ed1fbb0d3fd45f9e54a20cfea'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_d42b3698-6fa2-4765-9980-a663e7e12925',
+  keyword: 'ans_88fdaf9c-dc0f-4d2f-8c59-3f18beb777da',
+  answer: 'Estamos aquí para ayudarte con todo lo que necesites. Ya sea que busques útiles escolares, artículos de oficina, material para manualidades o cualquier otro producto, ¡lo tenemos! No dudes en preguntar por precios, disponibilidad o recomendaciones. ¡Estamos listos para hacer tu experiencia de compra rápida y sencilla!',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'a865d8b78f1aa6860d7f5cec93e2a3f5'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_429464a1-5251-400e-8307-18043e433a46',
+  keyword: 'ans_d42b3698-6fa2-4765-9980-a663e7e12925',
+  answer: '__call_action__',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '3a1de07822c9e9246f9a47ccd776c72c'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_4d959256-8e62-41a8-a5a8-b8980437a3f3',
+  keyword: 'ans_429464a1-5251-400e-8307-18043e433a46',
+  answer: '__capture_only_intended__',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '36a9ec23f64eebd70110da6fbc4acb81'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573128717462@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB033568832566F319964',
+    participant: undefined
+  },
+  messageTimestamp: 1732053764,
+  pushName: 'ALBA R  VALENCIA H',
+  broadcast: false,
+  message: Message {
+    conversation: 'Ana',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'Ana',
+  from: '573128717462'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_c82743e9-0058-424c-8e99-16e8e16f553e',
+  keyword: 'ans_4d959256-8e62-41a8-a5a8-b8980437a3f3',
+  answer: 'Escribe *conocer*, *linea*, para que puedas ver nuestras lineas de venta',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [ [Object], [Object], [Object], [Object], [Object] ],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '1730df76e7e95b59a16b7b959ef98bd5'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573128717462@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0FA398392276EA3CC20',
+    participant: undefined
+  },
+  messageTimestamp: 1732053783,
+  pushName: 'ALBA R  VALENCIA H',
+  broadcast: false,
+  message: Message {
+    conversation: 'pero no se cuales son las lineas',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'pero no se cuales son las lineas',
+  from: '573128717462'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_a34197fe-5728-4043-b1fa-ce3d4ee86aaf',
+  keyword: 'key_63dd58c6-f81d-4c41-80bf-aaeaeba531dd',
+  answer: '1. *Papelería*\n2. *Cosméticos*\n3. *Aseo*\n4. *Medicamentos*',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'd8bc3e6081960a07e7b9c5fc345e1c98'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_08e2256b-2f54-4947-9a54-4bfefae4870b',
+  keyword: 'ans_a34197fe-5728-4043-b1fa-ce3d4ee86aaf',
+  answer: 'Selecciona tu opción de preferencia',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '42175dcfb1d7dad7d2638ec9ba7acbf1'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_9dea6e26-4df4-47cb-9d4f-524c909411b0',
+  keyword: 'ans_08e2256b-2f54-4947-9a54-4bfefae4870b',
+  answer: 'Selecciona tu opción de preferencia\n' +
+    'Debes de responder antes de que transcurran 2 minutos',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: 120000,
+    ref: null,
+    nested: [
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object],
+      [Object], [Object], [Object]
+    ],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '48b5b03ef0a59311a1160fb85496f9a9'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '573136504535@s.whatsapp.net',
     fromMe: false,
-    id: '00D2598305C61C6FC503B6591E0041DF',
+    id: '8EEA4C908C530F0DF72F92DF6B93DB1E',
     participant: undefined
   },
-  messageTimestamp: 1731960263,
+  messageTimestamp: 1732053785,
   pushName: 'Mi Chocuanina, Mi Vida ❤️🕊️',
   broadcast: false,
   message: Message {
     extendedTextMessage: ExtendedTextMessage {
-      text: 'Amor cansada también',
+      text: 'Karen',
       previewType: 0,
       contextInfo: [ContextInfo],
       inviteLinkGroupTypeV2: 0
@@ -557,6 +1189,24 @@
       messageSecret: [Uint8Array]
     }
   },
-  body: 'Amor cansada también',
+  body: 'Karen',
   from: '573136504535'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_c82743e9-0058-424c-8e99-16e8e16f553e',
+  keyword: 'ans_4d959256-8e62-41a8-a5a8-b8980437a3f3',
+  answer: 'Escribe *conocer*, *linea*, para que puedas ver nuestras lineas de venta',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [ [Object], [Object], [Object], [Object], [Object] ],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '1730df76e7e95b59a16b7b959ef98bd5'
 }

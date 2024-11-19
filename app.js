@@ -1,42 +1,54 @@
 const {
   createBot,
   createProvider,
-  createflujo,
+  createFlow,
   addKeyword,
-  addChild,
+  EVENTS,
 } = require("@bot-whatsapp/bot");
 
 const QRPortalWeb = require("@bot-whatsapp/portal");
 const BaileysProvider = require("@bot-whatsapp/provider/baileys");
-const MockAdapter = require("@bot-whatsapp/database/mongo");
-// const mensaje = "";
+const MongoAdapter = require("@bot-whatsapp/database/mongo");
 
 /**
  * Declaramos las conexiones de Mongo
  */
 
-// const MONGO_DB_URI = "mongodb://0.0.0.0:27017";
+const contactos = [3165365663, 3135904749, 3006495552];
+
 const MONGO_DB_URI =
   "mongodb://root:example@localhost:27017/db_bot?authSource=admin&authMechanism=SCRAM-SHA-1";
-// const MONGO_DB_NAME = "db_bot";
+const MONGO_DB_NAME = "db_bot";
 
 const flujoDespedida = addKeyword(["chao", "adios", "hasta luego"]).addAnswer([
   "¡Hasta luego! 👋👋👋",
   // "https://wa.me/573135904749?text=Hola%20como%20estas",
 ]);
 
-const flujoAsesor = addKeyword("asesor").addAnswer([
-  "En un momento seras atentido por uno de nuestros asesores",
-  "https://wa.me/573135904749?text=Hola%20como%20estas",
-]);
+const flujoFinal = addKeyword(EVENTS.ACTION).addAnswer(
+  "Se canceló por inactividad"
+);
 
-// const flujoArte = addKeyword("1").addAnswer([
-//   "Has ingresado al catálogo de *Arte*",
-//   "En el link de abajo (⬇⬇⬇) puedes observar nuestro *catálogo*",
-// ]);
-// const flujoCacharro = addKeyword("3").addAnswer([
-//   "Has ingresado al catalogo de Cacharro",
-// ]);
+// Función para seleccionar un número aleatorio del array 'contactos'
+function obtenerNumeroAleatorio() {
+  const indiceAleatorio = Math.floor(Math.random() * contactos.length);
+  return contactos[indiceAleatorio];
+}
+
+const flujoAsesor = addKeyword("asesor")
+  .addAnswer(["En un momento seras atentido por uno de nuestros asesores"])
+  .addAnswer(
+    "⬇⬇⬇ Por favor, presiona el link de abajo y serás atendido por uno de nuestros asesores ⬇⬇⬇",
+    {
+      delay: 2000,
+    }
+  )
+  .addAnswer(
+    `https://wa.me/57${obtenerNumeroAleatorio()}?text=Hola%20estoy%20interesado,%20en%20adquirir%20.....%20`,
+    {
+      delay: 2000,
+    }
+  );
 
 const flujoPapeleria = addKeyword("1")
   .addAnswer([
@@ -46,9 +58,12 @@ const flujoPapeleria = addKeyword("1")
   .addAnswer(
     "https://drive.google.com/file/d/1oTldNGPb_Qc8uw7SbVPG8m2as1h30H0V/view?usp=sharing"
   )
-  .addAction(async (_, { flujoDynamic }) => {
-    return await flujoDynamic(`Buenas! ¿Cual es tu nombre? ${mensaje}`);
-  });
+  .addAnswer(
+    ["Escribe *asesor* para ser atendido por uno de nuestros asesores"],
+    null,
+    null,
+    [flujoAsesor]
+  );
 
 const flujoCosmeticos = addKeyword("2")
   .addAnswer([
@@ -57,6 +72,12 @@ const flujoCosmeticos = addKeyword("2")
   ])
   .addAnswer(
     "https://drive.google.com/file/d/1Ofa63QJ1yb2reZMq1Dzt18Thh5I-vBPh/view?usp=sharing"
+  )
+  .addAnswer(
+    ["Escribe *asesor* para ser atendido por uno de nuestros asesores"],
+    null,
+    null,
+    [flujoAsesor]
   );
 
 const flujoAseo = addKeyword("3")
@@ -79,46 +100,63 @@ const flujoMedicamentos = addKeyword("4")
   .addAnswer(
     "https://drive.google.com/file/d/1FN1J-NYr1TVUnYfPndpNDvqPCPVk6_LY/view?usp=sharing"
   )
-  .addAction(async (_, { flujoDynamic }) => {
-    return await flujoDynamic(`Buenas! ¿Cual es tu nombre? ${mensaje}`);
-  });
+  .addAnswer(
+    ["Escribe *asesor* para ser atendido por uno de nuestros asesores"],
+    null,
+    null,
+    [flujoAsesor]
+  );
 
-const flujoLineas = addKeyword(["pedir", "linea", "lineas"])
+const flujoLineas = addKeyword(["conocer", "linea", "lineas"])
   .addAnswer([
     "1. *Papelería*",
     "2. *Cosméticos*",
     "3. *Aseo*",
     "4. *Medicamentos*",
     // "6. *Tecnología*",
-    // "1. *Arte*",
     // "5, *Institucional*",
   ])
   .addAnswer("Selecciona tu opción de preferencia", null, null, [
-    flujoCosmeticos,
-    flujoPapeleria,
-    flujoAseo,
-    flujoMedicamentos,
-    flujoAsesor,
-    flujoDespedida,
     // flujoArte,
     // flujoCacharro,
-  ]);
+  ])
+  .addAnswer(
+    [
+      "Selecciona tu opción de preferencia",
+      "Debes de responder antes de que transcurran 2 minutos",
+    ],
+    { capture: true, idle: (60000 * 2) }, // idle: 2000 = 2 segundos
+    async (ctx, { gotoFlow, inRef }) => {
+      if (ctx?.idleFallBack) {
+        // Si el tiempo de inactividad se ha agotado, se redirige al flujo final
+        return gotoFlow(flujoFinal);
+      }
 
-const flujoSecundario = addKeyword(["segundo", "mensaje"])
+      // Si el usuario responde dentro del tiempo, se puede continuar con el flujo
+      // Aquí puedes agregar más lógica si lo necesitas
+    },
+    [
+      flujoCosmeticos,
+      flujoPapeleria,
+      flujoAseo,
+      flujoMedicamentos,
+      flujoAsesor,
+      flujoDespedida,
+    ]
+  )
+  .addAnswer(
+    "Gracias por responder", // Mensaje para agradecer después de una respuesta
+    { capture: true }
+  );
+
+const flujoCliente = addKeyword(["cliente", "mensaje"])
   .addAction(async (_, { flujoDynamic }) => {
     return await flujoDynamic("¡Hola! ¿En qué puedo ayudarte?");
   })
   .addAction({ capture: true }, async (ctx, { flujoDynamic }) => {
     mensaje = ctx.body;
-    return await flujoDynamic(`Has dicho: ${mensaje}`);
+    return await flujoDynamic(`Un placer: ${mensaje}`);
   });
-
-// const flujoBotones = addKeyword(["botones", "boton"]).addAnswer(
-//   "Aqui va un mensaje",
-//   {
-//     buttons: [{ body: "opcion 1" }, { body: "opcion 2" }, { body: "opcion 3" }],
-//   }
-// );
 
 const flujoPrincipal = addKeyword(["hola", "ole", "alo", "buenas", "tardes"])
   .addAnswer(
@@ -131,33 +169,57 @@ const flujoPrincipal = addKeyword(["hola", "ole", "alo", "buenas", "tardes"])
   .addAnswer([
     "Estamos aquí para ayudarte con todo lo que necesites. Ya sea que busques útiles escolares, artículos de oficina, material para manualidades o cualquier otro producto, ¡lo tenemos! No dudes en preguntar por precios, disponibilidad o recomendaciones. ¡Estamos listos para hacer tu experiencia de compra rápida y sencilla!",
   ])
-  .addAnswer("Escribe *pedir* si te interesa algo", null, null, [flujoLineas]);
+  .addAction(async (_, { flowDynamic }) => {
+    return await flowDynamic("¿Cual es tu nombre?");
+  })
+  .addAction({ capture: true }, async (ctx, { flowDynamic }) => {
+    const mensaje = ctx.body;
+    return await flowDynamic(`Un placer: ${mensaje}`);
+  })
+  .addAnswer(
+    [
+      "Escribe *conocer*, *linea*, para que puedas ver nuestras lineas de venta",
+    ],
+    null,
+    null,
+    [flujoLineas]
+  );
 
-
-
-  
-async function main() {
-  const adapterDB = new MockAdapter({
+// .addAnswer(
+//   "🙌 Hola ¡Bienvenido al Chat Bot de la *Papelería Universal*! 🎉🖊️",
+//   {
+//     media:
+//       "https://media.licdn.com/dms/image/v2/C561BAQFuDa7bnTijFg/company-background_10000/company-background_10000/0/1608825905089/distribuidora_universal_papeleria_cover?e=1732550400&v=beta&t=-PYBhIyKlbh_b8LFGzJAy59JYNZ4qMHcilw8nqDI_Mo",
+//   }
+// )
+// .addAnswer([
+//   "Estamos aquí para ayudarte con todo lo que necesites. Ya sea que busques útiles escolares, artículos de oficina, material para manualidades o cualquier otro producto, ¡lo tenemos! No dudes en preguntar por precios, disponibilidad o recomendaciones. ¡Estamos listos para hacer tu experiencia de compra rápida y sencilla!",
+// ])
+// .addAnswer(
+//   [
+//     "Escribe *conocer*, *linea*, para que puedas ver nuestras lineas de venta",
+//   ],
+//   null,
+//   null,
+//   [flujoLineas]
+// );
+const main = async () => {
+  const adapterDB = new MongoAdapter({
     dbUri: MONGO_DB_URI,
     // dbName: MONGO_DB_NAME,
   });
-  // const adapterDB = new MockAdapter();
-  const adapterflujo = createflujo([
+  const adapterFlow = createFlow([
     flujoPrincipal,
-    flujoAsesor,
     flujoDespedida,
-    flujoSecundario,
-    // flujoBotones,
+    // flujoAsesor,
   ]);
   const adapterProvider = createProvider(BaileysProvider);
-
   createBot({
-    flujo: adapterflujo,
+    flow: adapterFlow,
     provider: adapterProvider,
     database: adapterDB,
   });
-
   QRPortalWeb();
-}
+};
 
 main();
