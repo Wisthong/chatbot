@@ -8,13 +8,13 @@ const {
 
 const QRPortalWeb = require("@bot-whatsapp/portal");
 const BaileysProvider = require("@bot-whatsapp/provider/baileys");
-const MongoAdapter = require("@bot-whatsapp/database/mongo");
+const MongoAdapter = require("@bot-whatsapp/database/mock");
 
 /**
  * Declaramos las conexiones de Mongo
  */
 
-const contactos = [3165365663, 3135904749, 3006495552];
+const contactos = [3103885613, 3217798798, 3157686880];
 
 const MONGO_DB_URI =
   "mongodb://root:example@localhost:27017/db_bot?authSource=admin&authMechanism=SCRAM-SHA-1";
@@ -109,23 +109,18 @@ const flujoMedicamentos = addKeyword("4")
 
 const flujoLineas = addKeyword(["conocer", "linea", "lineas"])
   .addAnswer([
-    "1. *Papelería*",
-    "2. *Cosméticos*",
-    "3. *Aseo*",
-    "4. *Medicamentos*",
-    // "6. *Tecnología*",
-    // "5, *Institucional*",
+    "1️⃣. *Papelería*",
+    "2️⃣. *Cosméticos*",
+    "3️⃣. *Aseo*",
+    "4️⃣. *Medicamentos*",
   ])
-  .addAnswer("Selecciona tu opción de preferencia", null, null, [
-    // flujoArte,
-    // flujoCacharro,
-  ])
+  .addAnswer("Selecciona tu opción de preferencia", null, null, [])
   .addAnswer(
     [
       "Selecciona tu opción de preferencia",
       "Debes de responder antes de que transcurran 2 minutos",
     ],
-    { capture: true, idle: (60000 * 2) }, // idle: 2000 = 2 segundos
+    { capture: true, idle: 60000 * 2 }, // idle: 2000 = 2 segundos
     async (ctx, { gotoFlow, inRef }) => {
       if (ctx?.idleFallBack) {
         // Si el tiempo de inactividad se ha agotado, se redirige al flujo final
@@ -158,16 +153,17 @@ const flujoCliente = addKeyword(["cliente", "mensaje"])
     return await flujoDynamic(`Un placer: ${mensaje}`);
   });
 
-const flujoPrincipal = addKeyword(["hola", "ole", "alo", "buenas", "tardes"])
+// const flujoPrincipal = addKeyword(["hola", "ole", "alo", "buenas", "tardes"])
+const flujoPrincipal = addKeyword(EVENTS.WELCOME)
   .addAnswer(
     "🙌 Hola ¡Bienvenido al Chat Bot de la *Papelería Universal*! 🎉🖊️",
     {
       media:
-        "https://media.licdn.com/dms/image/v2/C561BAQFuDa7bnTijFg/company-background_10000/company-background_10000/0/1608825905089/distribuidora_universal_papeleria_cover?e=1732550400&v=beta&t=-PYBhIyKlbh_b8LFGzJAy59JYNZ4qMHcilw8nqDI_Mo",
+        "https://media.licdn.com/dms/image/v2/C561BAQFuDa7bnTijFg/company-background_10000/company-background_10000/0/1608825905089/distribuidora_universal_papeleria_cover?e=1733245200&v=beta&t=8Qxd0qhGmZ2VwvrEQH1Y6g_Ioxy98Qa4AuU8XwZTg1E",
     }
   )
   .addAnswer([
-    "Estamos aquí para ayudarte con todo lo que necesites. Ya sea que busques útiles escolares, artículos de oficina, material para manualidades o cualquier otro producto, ¡lo tenemos! No dudes en preguntar por precios, disponibilidad o recomendaciones. ¡Estamos listos para hacer tu experiencia de compra rápida y sencilla!",
+    "Estamos aquí para asesorarte con todo lo que necesites. Si esta interesado en útiles escolares, artículos de oficina, material para manualidades o cualquier otro producto, ¡lo tenemos! No dudes en preguntar por precios, disponibilidad o recomendaciones. ¡Estamos listos para hacer tu experiencia de compra rápida y sencilla!",
   ])
   .addAction(async (_, { flowDynamic }) => {
     return await flowDynamic("¿Cual es tu nombre?");
@@ -176,38 +172,57 @@ const flujoPrincipal = addKeyword(["hola", "ole", "alo", "buenas", "tardes"])
     const mensaje = ctx.body;
     return await flowDynamic(`Un placer: ${mensaje}`);
   })
+  .addAnswer([
+    "1️⃣. *Papelería*",
+    "2️⃣. *Cosméticos*",
+    "3️⃣. *Aseo*",
+    "4️⃣. *Medicamentos*",
+    "*Asesor*. *Seras atendido por un asesor*",
+  ])
+  .addAnswer("Selecciona tu opción de preferencia", null, null, [])
   .addAnswer(
     [
-      "Escribe *conocer*, *linea*, para que puedas ver nuestras lineas de venta",
+      "Selecciona tu opción de preferencia",
+      "Debes de responder antes de que transcurran 2 minutos",
     ],
-    null,
-    null,
-    [flujoLineas]
-  );
+    { capture: true, idle: 60000 * 2 }, // idle: 2000 = 2 segundos
+    async (ctx, { gotoFlow, inRef }) => {
+      if (ctx?.idleFallBack) {
+        // Si el tiempo de inactividad se ha agotado, se redirige al flujo final
+        return gotoFlow(flujoFinal);
+      }
 
+      // Si el usuario responde dentro del tiempo, se puede continuar con el flujo
+      // Aquí puedes agregar más lógica si lo necesitas
+    },
+    [
+      flujoCosmeticos,
+      flujoPapeleria,
+      flujoAseo,
+      flujoMedicamentos,
+      flujoAsesor,
+      flujoDespedida,
+    ]
+  );
 // .addAnswer(
-//   "🙌 Hola ¡Bienvenido al Chat Bot de la *Papelería Universal*! 🎉🖊️",
-//   {
-//     media:
-//       "https://media.licdn.com/dms/image/v2/C561BAQFuDa7bnTijFg/company-background_10000/company-background_10000/0/1608825905089/distribuidora_universal_papeleria_cover?e=1732550400&v=beta&t=-PYBhIyKlbh_b8LFGzJAy59JYNZ4qMHcilw8nqDI_Mo",
-//   }
+//   "Gracias por responder", // Mensaje para agradecer después de una respuesta
+//   { capture: true }
 // )
-// .addAnswer([
-//   "Estamos aquí para ayudarte con todo lo que necesites. Ya sea que busques útiles escolares, artículos de oficina, material para manualidades o cualquier otro producto, ¡lo tenemos! No dudes en preguntar por precios, disponibilidad o recomendaciones. ¡Estamos listos para hacer tu experiencia de compra rápida y sencilla!",
-// ])
 // .addAnswer(
 //   [
 //     "Escribe *conocer*, *linea*, para que puedas ver nuestras lineas de venta",
 //   ],
 //   null,
 //   null,
-//   [flujoLineas]
+//   [flujoAsesor]
 // );
+
 const main = async () => {
-  const adapterDB = new MongoAdapter({
-    dbUri: MONGO_DB_URI,
-    // dbName: MONGO_DB_NAME,
-  });
+  const adapterDB = new MongoAdapter();
+  // const adapterDB = new MongoAdapter({
+  //   dbUri: MONGO_DB_URI,
+  //   // dbName: MONGO_DB_NAME,
+  // });
   const adapterFlow = createFlow([
     flujoPrincipal,
     flujoDespedida,
