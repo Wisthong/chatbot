@@ -36,7 +36,7 @@ const flujoFinal = addKeyword(EVENTS.ACTION).addAnswer(
   "Se canceló por inactividad"
 );
 
-const flujoCallcenter = addKeyword("1")
+const flujoCallcenter = addKeyword("1", "1️⃣")
   .addAnswer("⬇ Por favor, presiona el link de abajo y serás atendido⬇", {
     delay: 1000,
   })
@@ -58,7 +58,7 @@ const flujoCallcenter = addKeyword("1")
     // return gotoFlow(flujoCallcenter); // Esto es solo un ejemplo, puedes personalizarlo.
   });
 
-const flujoPaola = addKeyword("2")
+const flujoPaola = addKeyword("2", "2️⃣")
   .addAnswer("⬇ Por favor, presiona el link de abajo y serás atendido⬇", {
     delay: 2000,
   })
@@ -68,7 +68,7 @@ const flujoPaola = addKeyword("2")
       delay: 2000,
     }
   );
-const flujoJennifer = addKeyword("3")
+const flujoJennifer = addKeyword("3", "3️⃣")
   .addAnswer("⬇ Por favor, presiona el link de abajo y serás atendido⬇", {
     delay: 2000,
   })
@@ -78,7 +78,7 @@ const flujoJennifer = addKeyword("3")
       delay: 2000,
     }
   );
-const flujoKaren = addKeyword("4")
+const flujoKaren = addKeyword("4", "4️⃣")
   .addAnswer("⬇ Por favor, presiona el link de abajo y serás atendido⬇", {
     delay: 2000,
   })
@@ -88,7 +88,7 @@ const flujoKaren = addKeyword("4")
       delay: 2000,
     }
   );
-const flujoCony = addKeyword("5")
+const flujoCony = addKeyword("5", "5️⃣")
   .addAnswer("⬇ Por favor, presiona el link de abajo y serás atendido⬇", {
     delay: 2000,
   })
@@ -98,12 +98,23 @@ const flujoCony = addKeyword("5")
       delay: 2000,
     }
   );
-const flujoJazmin = addKeyword("6")
+const flujoJazmin = addKeyword("6", "6️⃣")
   .addAnswer("⬇ Por favor, presiona el link de abajo y serás atendido⬇", {
     delay: 2000,
   })
   .addAnswer(
     `https://wa.me/57${obtenerNumeroAleatorio()}?text=Hola%20Jazmin.....%20`,
+    {
+      delay: 2000,
+    }
+  );
+
+const flujoAgendamientoProveedor = addKeyword("7", "7️⃣")
+  .addAnswer("⬇ Por favor, presiona el link de abajo para agendamiento⬇", {
+    delay: 2000,
+  })
+  .addAnswer(
+    `https://docs.google.com/forms/d/e/1FAIpQLSd6Te7KZ0URTlt1OATssBXJnrdIlFn4eLjmlFjJ3H8fXuLX2g/viewform`,
     {
       delay: 2000,
     }
@@ -129,14 +140,6 @@ const flujoPrincipal = addKeyword(["hola", "buenas", "alo"])
       delay: 1000,
     }
   )
-  // .addAnswer(
-  //   [
-  //     "Estamos aquí para asesorarte con todo lo que necesites. Si esta interesado en útiles escolares, artículos de oficina, material para manualidades o cualquier otro producto, ¡lo tenemos! No dudes en preguntar por precios, disponibilidad o recomendaciones. ¡Estamos listos para hacer tu experiencia de compra rápida y sencilla!",
-  //   ],
-  //   {
-  //     delay: 1000,
-  //   }
-  // )
   .addAnswer([
     "1️⃣. *Callcenter*",
     "2️⃣. *Paola Luna*",
@@ -175,6 +178,7 @@ const flujoPrincipal = addKeyword(["hola", "buenas", "alo"])
       flujoKaren,
       flujoPaola,
       flujoDespedida,
+      flujoAgendamientoProveedor,
     ]
   );
 
